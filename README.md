@@ -42,7 +42,11 @@ Don't forget to configure your realm's SMTP settings, otherwise no email will be
 3. Click `Realm settings` from the menu on the left.
 4. Click on the `Email`-tab and enter your smpt data.
 
+## Theme configuration
+
+Copy the themes/keycloak.v2.extended folder to keycloak/themes folder to render the Email Authenticator in the authenticator selector UI.
+
 ## Authentication Flow
 Create new browser login authentication flow and add Email OTP flow after Username Password Form.
-
+Set the requirement for Email OTP flow to Alternate to make it work along with existing 2FA (either or)
 <img src="static/otp-form.png">
